@@ -742,7 +742,7 @@ extension SocketEngine {
     /// - Parameters:
     ///   - event: WS Event
     ///   - _:
-    public func didReceive(event: WebSocketEvent, client: WebSocketClient) {
+    public func didReceive(event: Starscream.WebSocketEvent, client: Starscream.WebSocket) {
         switch event {
         case let .connected(headers):
             wsConnected = true
