@@ -746,7 +746,7 @@ extension SocketEngine {
         switch event {
         case let .connected(headers):
             wsConnected = true
-            client?.engineDidWebsocketUpgrade(headers: headers)
+            client.engineDidWebsocketUpgrade(headers: headers)
             websocketDidConnect()
         case .cancelled:
             wsConnected = false
